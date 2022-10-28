@@ -57,7 +57,7 @@ penguins_sapales |>
                      .f = function(.x, .y){
                        .x |> 
                          bind_rows(.y) # Needed for the function daisy() 
-  # All points must be on the same data.frame.
+  # All points must be on the same data.frame AND we need the row_point to be on the top.
                      })) |> 
   mutate(distance = map(.x = both, .f = function(.x){
     .x |> as.matrix() |> daisy(metric = "euclidean") 
