@@ -57,7 +57,6 @@ tidy_nearest <- function(.data, nearest_neighbours = 5,
   resultados_finales_2 |> 
     select(key, resultado_final)
 }
-all_keys
 
 # DEMOSTRACIÓN
 
