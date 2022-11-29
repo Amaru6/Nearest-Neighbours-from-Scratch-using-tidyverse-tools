@@ -6,7 +6,7 @@ library(smotefamily)
 penguins |> 
   mutate(key = str_c("id_", 1:344)) |> 
   select(key, everything()) -> penguins
-# Let's just match with two variables "flipper_length_mm" and "flipper_length_mm"
+# Let's just match with two variables "bill_length_mm" and "flipper_length_mm"
 penguins |> 
   select(key, bill_length_mm,  flipper_length_mm) -> penguins_sapales
 #-----------------------------------
